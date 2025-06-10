@@ -1,16 +1,16 @@
+/* Base theme */
 @import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/scyfin-theme.css');
-
-
 @import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/disable-static-drawer.css');
 
 /* seafaom, coral, or snow */
 @import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/theme-coral.css');
-
 @import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/theme-oled.css');
-
 @import url('https://cdn.statically.io/gh/LitCastVlog/Flow/main/CSS/ScyFLow-RoundCastCrew.css');
 
+
+/* Font imports */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .layout-desktop .detailSectionContent,
 .layout-desktop .detailsGroupItem {
@@ -131,4 +131,24 @@ body {
 	padding: 1em;
 	background-color: rgba(0,0,0,0.5);
 	border-radius: var(--rounded-cards);
+    min-height: 500px;
+}
+
+.mediaInfoStream .mediaInfoAttribute,
+.mediaInfoStream .mediaInfoLabel {
+    font-size: 0.8rem;
+    vertical-align: top;
+    margin-top: 4px;
+    font-family: Inconsolata, monospace;
+    font-size: 0.8rem;
+}
+
+.mediaInfoStream .mediaInfoAttribute {
+    opacity: 0.6;
+    max-width: 80%;
+}
+
+.mediaInfoStream .mediaInfoStreamType {
+    font-family: Inconsolata, sans-serif;
+    font-weight: 1000;
 }
