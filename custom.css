@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.layout-desktop .detailSectionContent,
+.layout-desktop .detailsGroupItem {
+    border-width: 0px !important;
+    background-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+html {
+    font-family: Inter, sans-serif;
+}
+
+.sectionTitle {
+    font-weight: 700;
+}
+
+.overflowBackdropCard {
+    width: 240px;
+}
+
+.overflowPortraitCard {
+    width: 160px;
+}
+
+.section0 .card[data-type="CollectionFolder"] .cardPadder {
+    background: transparent;
+    padding-bottom: 25%;
+    border: 1px solid rgba(255 255 255 / 0.3);
+    border-radius: 40px !important;
+}
+
+.blurhash-canvas {
+/*
+    filter: brightness(0.3) contrast(1.3);
+*/
+    display: none;
+}
+
+.section0 .card[data-type="CollectionFolder"] .blurhash-canvas,
+.section0 .card[data-type="CollectionFolder"] .cardText {
+    display: none;
+}
+
+.section0 .card[data-type="CollectionFolder"] .cardOverlayContainer {
+    background: transparent;
+}
+
+.section0 .card[data-type="CollectionFolder"] .cardOverlayButton-br {
+    bottom: 2px;
+}
+
+.section0 .card[data-type="CollectionFolder"] .cardBox {
+    margin: 4px !important;
+}
+
+.section0 .card[data-type="CollectionFolder"] {
+    width: 10vw;
+    min-width: 160px;
+    max-width: 240px;
+}
+
+@media only screen and (max-width: 600px) {
+    .section0 .card[data-type="CollectionFolder"] {
+        max-width: 120px;
+    }
+}
+
+.section0 .itemsContainer:has(.card[data-type="CollectionFolder"]) {
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+#txtCustomCss {
+	height: 80vh !important;
+	overflow-y: auto !important;
+}
+
+.layout-desktop #loginPage .loginDisclaimerContainer {
+    left: unset !important;
+    width: 100% !important;
+}
+
+.layout-desktop #loginPage .padded-left.padded-right.padded-bottom-page.margin-auto-y {
+    background: transparent !important;
+}
+
+.libraryPage .cardText.cardTextCentered {
+    text-align: unset !important;
+}
+
+.libraryPage .backdropCard {
+    min-width: 160px;
+    max-width: 240px;
+}
+
+.libraryPage .portraitCard {
+    min-width: 120px;
+    max-width: 180px;
+}
+
+body {
+    --rounded-cards: 4px;
+}
+
+.searchSuggestionsList {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 1.2rem;
+	font-weight: 100 !important;
+	font-family: Inter Light, sans-serif;
+	padding: 0 10% !important;
+}
+
+.mediaInfoStream {
+	display: inline-block;
+	margin: 0 1em 1em 0;
+	vertical-align: top;
+	width: calc(33% - 5em);
+	padding: 1em;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: var(--rounded-cards);
+}
