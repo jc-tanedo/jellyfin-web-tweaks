@@ -152,3 +152,11 @@ body {
     font-family: Inconsolata, sans-serif;
     font-weight: 1000;
 }
+
+.cardPadder .cardImageIcon {
+    opacity: 0.03;
+}
+
+.cardBox:not(.visualCardBox) .cardPadder {
+    background-color: #050505;
+}
